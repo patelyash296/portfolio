@@ -1,1 +1,15 @@
-#portfolio
+# Personal Portfolio
+
+Professional portfolio website built using HTML, CSS and JavaScript.
+
+## Features
+
+- Responsive Design
+- Modern UI
+- Download Resume
+- Project Showcase
+- Contact Information
+
+## Live Website
+
+https://patelyash296.github.io/portfolio/

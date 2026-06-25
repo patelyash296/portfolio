@@ -1,89 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Patel | Portfolio</title>
-    <!-- FontAwesome Vector Graphics Icons -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Link to external style sheet -->
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-[#0B111E] text-white font-sans antialiased selection:bg-blue-500 selection:text-white">
 
-    <nav>
-        <div class="logo">Yash Patel</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0B111E]/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
+                MyPortfolio
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#tech-stack" class="hover:text-white transition-colors">Tech Stack</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0B111E] border-b border-gray-800 px-6 py-4 flex flex-col space-y-4 text-sm font-medium">
+            <a href="#about" class="menu-link text-gray-300 hover:text-white">About</a>
+            <a href="#tech-stack" class="menu-link text-gray-300 hover:text-white">Tech Stack</a>
+            <a href="#projects" class="menu-link text-gray-300 hover:text-white">Projects</a>
+            <a href="#contact" class="menu-link text-gray-300 hover:text-white">Contact</a>
+        </div>
     </nav>
 
-    <div class="hero-container">
-        <div class="hero-text">
-            <div class="status-badge">
-                <div class="status-dot"></div>
-                Available for Opportunities
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 flex flex-col items-center justify-center text-center px-6 min-h-[85vh]">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+            Hi, I'm <span class="text-blue-500">Yash Patel</span> 👋
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-xl mb-8 font-medium">
+            A Passionate <span class="text-blue-400">Full-Stack Django Developer</span> & <span class="text-purple-400">Machine Learning Enthusiast</span>
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <a href="#projects" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-md transition-all text-center">
+                View Projects
+            </a>
+            <a href="#contact" class="w-full sm:w-auto border border-gray-700 bg-gray-900/50 hover:bg-gray-800 text-white font-medium px-8 py-3 rounded-md transition-all text-center">
+                Contact Me
+            </a>
+            <a href="#" download class="w-full sm:w-auto bg-[#00D26A] hover:bg-[#00B85C] text-black font-semibold px-8 py-3 rounded-md transition-all text-center">
+                Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white text-gray-900 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="w-32 h-32 bg-gray-200 rounded-2xl mx-auto mb-6 overflow-hidden shadow-md flex items-center justify-center">
+                <i class="fa-solid fa-user-tie text-gray-400 text-4xl"></i>
             </div>
-            <h1>Hi, I'm Yash Patel</h1>
-            <div class="subtitle">Software Engineer</div>
-            <div class="mini-tags">Python • Django • OOPs • OS • DBMS</div>
-            <p class="hero-description">
-                Passionate Computer Science & Engineering graduate focused on Backend Development and building scalable web applications. My expertise includes working with full-stack web architectures, executing dynamic CRUD lifecycles, and managing relational database configurations using Python, Django, and MySQL.
+            <h2 class="text-3xl font-bold mb-3">About Me</h2>
+            <h3 class="text-blue-600 font-semibold mb-6 flex items-center justify-center gap-2">
+                🚀 Python & Django Developer | Machine Learning Enthusiast
+            </h3>
+            <p class="text-gray-600 leading-relaxed text-base md:text-lg max-w-2xl mx-auto">
+                Hi, I'm Yash Patel, a final-year Computer Science Engineering student at <strong>Government Engineering College, Patan</strong>. 
+                I am highly passionate about backend engineering, web application architecture, and data-driven problem-solving. 
+                I enjoy working with the Python ecosystem to design efficient server-side systems and integrate predictive models. 
+                With a strong focus on clean architecture, I love building scalable, real-world tools that solve concrete community or business problems.
             </p>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="py-20 bg-gray-50 text-gray-900 px-6 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Tech Stack</h2>
+            <div class="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-brands fa-python text-yellow-500"></i> Python</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-code text-green-600"></i> Django Framework</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-brain text-purple-500"></i> Machine Learning</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-layer-group text-blue-500"></i> Data Preprocessing</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-globe text-sky-500"></i> REST APIs</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-database text-orange-500"></i> MySQL / SQL</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-brands fa-git-alt text-red-500"></i> Git & GitHub</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-book text-indigo-500"></i> DSA</div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-cubes text-pink-500"></i> OOPs Concepts</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-[#0B111E] px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">My Projects</h2>
+                <p class="text-gray-400 text-sm">Here are some of the projects I have worked on recently.</p>
+            </div>
             
-            <div class="btn-container">
-                <!-- Linked directly to your uploaded resume file -->
-                <a href="resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
-            </div>
+            <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+                <!-- Project 1 -->
+                <div class="bg-[#151F32] rounded-xl border border-gray-800 p-6 flex flex-col justify-between hover:border-gray-700 transition-colors">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Web-Based Turf & Sports Booking System</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">A robust web application built using Python and Django designed to streamline sports turf reservations, automate scheduling, manage peak-hour slots, and provide users with a clean, responsive booking dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Django</span>
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2.5">
+                        <a href="#" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg text-sm transition-colors">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="#" class="flex items-center justify-center gap-2 border border-gray-700 hover:bg-gray-800 text-gray-300 font-medium py-2.5 rounded-lg text-sm transition-colors"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
 
-            <div class="mini-socials">
-                <a href="https://github.com/patelyash296" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/yash-patel-cs2026" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:yashpatel29306@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <!-- Project 2 -->
+                <div class="bg-[#151F32] rounded-xl border border-gray-800 p-6 flex flex-col justify-between hover:border-gray-700 transition-colors">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Intelligent Computer Vision Classifier</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">A machine learning model developed to process and evaluate complex image data, applying custom feature extraction techniques to automate accurate visual recognition and analytics tasks.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2.5">
+                        <a href="#" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg text-sm transition-colors">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        <a href="#" class="flex items-center justify-center gap-2 border border-gray-700 hover:bg-gray-800 text-gray-300 font-medium py-2.5 rounded-lg text-sm transition-colors"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="hero-image-wrapper">
-            <div class="profile-circle">
-                <!-- Linked directly to your uploaded profile picture -->
-                <img src="profile.jpg" alt="Yash Patel" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-        </div>
-    </div>
-
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="info-card">
-            <p style="margin-bottom: 1.5rem; text-align: justify;">
-                I am a Software Engineer driven by backend efficiency, structural clean code, and database optimization. Having recently transitioned from my computer science engineering studies at GEC Patan, my primary technical focus is engineering robust server-side environments using Python and the Django framework. I specialize in managing complex application data flows, writing secure relational database queries, and mapping out structural MVT web lifecycles.
-            </p>
-            <p style="text-align: justify;">
-                When I step away from the code editor, my analytical mindset translates directly into my personal passions. I am a massive cricket fan who closely tracks match trends and statistics, as well as a dedicated pet owner focusing on meticulous care and nutrition for my young Persian kitten. I thrive at the intersection of logical computer science foundations and building smooth, high-performing web solutions.
-            </p>
         </div>
     </section>
 
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-row">
-            <div class="skill-capsule">Python</div>
-            <div class="skill-capsule">Django</div>
-            <div class="skill-capsule">OOPs</div>
-            <div class="skill-capsule">OS</div>
-            <div class="skill-capsule">DBMS</div>
-            <div class="skill-capsule">SQL</div>
-            <div class="skill-capsule">MySQL</div>
-            <div class="skill-capsule">SQLite</div>
-            <div class="skill-capsule">Java Basics</div>
-            <div class="skill-capsule">JavaScript</div>
-            <div class="skill-capsule">Git & GitHub</div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white text-gray-900 px-6 border-t border-gray-100">
+        <div class="max-w-md mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-2">Get in Touch</h2>
+            <p class="text-gray-600 text-sm mb-8">Interested in working together? Fill out the form below or connect with me on social media.</p>
+            
+            <form onsubmit="event.preventDefault();" class="space-y-4 text-left">
+                <div>
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-900" required />
+                </div>
+                <div>
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-900" required />
+                </div>
+                <div>
+                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-900 resize-none" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg text-sm transition-colors shadow-sm">
+                    Send Message
+                </button>
+            </form>
+
+            <!-- Social Links -->
+            <div class="flex items-center justify-center space-x-6 mt-10 text-gray-500">
+                <a href="#" class="hover:text-gray-900 transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+            </div>
         </div>
     </section>
 
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="bg-[#0B111E] py-6 border-t border-gray-900 text-center text-xs text-gray-500">
+        <p>© 2026 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.menu-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>

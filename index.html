@@ -4,191 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Patel | Portfolio</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-[#0B111E] text-white font-sans antialiased selection:bg-blue-500 selection:text-white">
+<body class="bg-[#0B111E] text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0B111E]/90 backdrop-blur-md border-b border-gray-800">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0B111E]/80 backdrop-blur-md border-b border-slate-800/60">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
-                MyPortfolio
+            <a href="#" class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent hover:opacity-90 transition-opacity">
+                Yash.Dev
             </a>
             
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
-                <a href="#about" class="hover:text-white transition-colors">About</a>
-                <a href="#tech-stack" class="hover:text-white transition-colors">Tech Stack</a>
-                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#tech-stack" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
-                <i class="fa-solid fa-bars text-2xl"></i>
+            <button id="menu-btn" class="md:hidden text-slate-400 hover:text-slate-100 focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#0B111E] border-b border-gray-800 px-6 py-4 flex flex-col space-y-4 text-sm font-medium">
-            <a href="#about" class="menu-link text-gray-300 hover:text-white">About</a>
-            <a href="#tech-stack" class="menu-link text-gray-300 hover:text-white">Tech Stack</a>
-            <a href="#projects" class="menu-link text-gray-300 hover:text-white">Projects</a>
-            <a href="#contact" class="menu-link text-gray-300 hover:text-white">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0F172A] border-b border-slate-800/80 px-6 py-4 flex flex-col space-y-4 text-sm font-medium shadow-xl">
+            <a href="#about" class="menu-link text-slate-300 hover:text-blue-400 transition-colors">About</a>
+            <a href="#tech-stack" class="menu-link text-slate-300 hover:text-blue-400 transition-colors">Skills</a>
+            <a href="#projects" class="menu-link text-slate-300 hover:text-blue-400 transition-colors">Projects</a>
+            <a href="#contact" class="menu-link text-slate-300 hover:text-blue-400 transition-colors">Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 flex flex-col items-center justify-center text-center px-6 min-h-[85vh]">
-        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            Hi, I'm <span class="text-blue-500">Yash Patel</span> 👋
+    <section class="relative pt-36 pb-24 flex flex-col items-center justify-center text-center px-6 min-h-[90vh] overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <span class="px-3 py-1 text-xs font-semibold tracking-wider text-blue-400 bg-blue-500/10 rounded-full mb-4 border border-blue-500/20 uppercase">
+            Available For Opportunities
+        </span>
+        
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
+            Hi, I'm <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-teal-400 bg-clip-text text-transparent">Yash Patel</span> 👋
         </h1>
-        <p class="text-lg md:text-xl text-gray-400 max-w-xl mb-8 font-medium">
-            A Passionate <span class="text-blue-400">Full-Stack Django Developer</span> & <span class="text-purple-400">Machine Learning Enthusiast</span>
+        
+        <p class="text-lg md:text-xl text-slate-400 max-w-xl mb-10 font-normal leading-relaxed">
+            A driven <span class="text-slate-200 font-medium">Full-Stack Django Developer</span> & <span class="text-slate-200 font-medium">Machine Learning Enthusiast</span> focused on building scalable backends and intelligent algorithms.
         </p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <a href="#projects" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-md transition-all text-center">
-                View Projects
+        
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto z-10">
+            <a href="#projects" class="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium px-8 py-3.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5 text-center">
+                Explore My Work <i class="fa-solid fa-arrow-right ml-1.5 text-xs"></i>
             </a>
-            <a href="#contact" class="w-full sm:w-auto border border-gray-700 bg-gray-900/50 hover:bg-gray-800 text-white font-medium px-8 py-3 rounded-md transition-all text-center">
-                Contact Me
+            <a href="#contact" class="w-full sm:w-auto border border-slate-700 bg-slate-900/40 hover:bg-slate-800/60 text-slate-200 font-medium px-8 py-3.5 rounded-xl transition-all text-center">
+                Let's Talk
             </a>
-            <a href="#" download class="w-full sm:w-auto bg-[#00D26A] hover:bg-[#00B85C] text-black font-semibold px-8 py-3 rounded-md transition-all text-center">
-                Download Resume
+            <a href="#" download class="w-full sm:w-auto bg-[#00D26A] hover:bg-[#00B85C] text-slate-950 font-semibold px-8 py-3.5 rounded-xl transition-all text-center shadow-lg shadow-emerald-500/10">
+                <i class="fa-solid fa-file-arrow-down mr-1.5"></i> Resume
             </a>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-20 bg-white text-gray-900 px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <div class="w-32 h-32 bg-gray-200 rounded-2xl mx-auto mb-6 overflow-hidden shadow-md flex items-center justify-center">
-                <i class="fa-solid fa-user-tie text-gray-400 text-4xl"></i>
-            </div>
-            <h2 class="text-3xl font-bold mb-3">About Me</h2>
-            <h3 class="text-blue-600 font-semibold mb-6 flex items-center justify-center gap-2">
-                🚀 Python & Django Developer | Machine Learning Enthusiast
-            </h3>
-            <p class="text-gray-600 leading-relaxed text-base md:text-lg max-w-2xl mx-auto">
-                Hi, I'm Yash Patel, a final-year Computer Science Engineering student at <strong>Government Engineering College, Patan</strong>. 
-                I am highly passionate about backend engineering, web application architecture, and data-driven problem-solving. 
-                I enjoy working with the Python ecosystem to design efficient server-side systems and integrate predictive models. 
-                With a strong focus on clean architecture, I love building scalable, real-world tools that solve concrete community or business problems.
-            </p>
-        </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section id="tech-stack" class="py-20 bg-gray-50 text-gray-900 px-6 border-t border-gray-200">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">Tech Stack</h2>
-            <div class="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-brands fa-python text-yellow-500"></i> Python</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-code text-green-600"></i> Django Framework</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-brain text-purple-500"></i> Machine Learning</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-layer-group text-blue-500"></i> Data Preprocessing</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-globe text-sky-500"></i> REST APIs</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-database text-orange-500"></i> MySQL / SQL</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-brands fa-git-alt text-red-500"></i> Git & GitHub</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-book text-indigo-500"></i> DSA</div>
-                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-gray-100 hover:scale-105 transition-transform cursor-default text-gray-800"><i class="fa-solid fa-cubes text-pink-500"></i> OOPs Concepts</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-[#0B111E] px-6">
-        <div class="max-w-4xl mx-auto">
+    <section id="about" class="py-24 bg-[#0F172A] border-t border-slate-800/40 px-6">
+        <div class="max-w-3xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-2">My Projects</h2>
-                <p class="text-gray-400 text-sm">Here are some of the projects I have worked on recently.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-2">About Me</h2>
+                <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full"></div>
             </div>
             
-            <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
-                <!-- Project 1 -->
-                <div class="bg-[#151F32] rounded-xl border border-gray-800 p-6 flex flex-col justify-between hover:border-gray-700 transition-colors">
+            <div class="bg-[#1E293B]/40 rounded-2xl border border-slate-800/80 p-8 md:p-10 shadow-xl backdrop-blur-sm">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center gap-2.5 justify-center md:justify-start">
+                    <i class="fa-solid fa-graduation-cap"></i> Computer Science Engineering Student
+                </h3>
+                <p class="text-slate-300 leading-relaxed text-base md:text-lg text-center md:text-left">
+                    Hi, I'm Yash Patel, a final-year Computer Science Engineering student at <strong class="text-white font-semibold">Government Engineering College, Patan</strong>. 
+                    I am highly passionate about backend engineering, web application architecture, and data-driven problem-solving.
+                </p>
+                <p class="text-slate-300 leading-relaxed text-base md:text-lg mt-4 text-center md:text-left">
+                    I enjoy working within the Python ecosystem to design efficient server-side systems and integrate predictive machine learning models. With a strong focus on clean architecture, object-oriented concepts, and robust core structures, I love building scalable, real-world tools that solve concrete community or business problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="py-24 bg-[#0B111E] px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Technical Skills</h2>
+                <p class="text-slate-400 text-sm">Languages, frameworks, and core competencies I work with.</p>
+                <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full mt-3"></div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-3.5 max-w-3xl mx-auto">
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-blue-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-brands fa-python text-yellow-500 text-base"></i> Python</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-green-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-code text-emerald-500 text-base"></i> Django Framework</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-purple-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-brain text-purple-400 text-base"></i> Machine Learning</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-blue-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-chart-pie text-blue-400 text-base"></i> Data Preprocessing</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-sky-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-cloud-arrow-up text-sky-400 text-base"></i> REST APIs</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-orange-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-database text-orange-400 text-base"></i> MySQL / SQL</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-red-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-brands fa-git-alt text-red-500 text-base"></i> Git & GitHub</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-indigo-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-book-bookmark text-indigo-400 text-base"></i> DSA</div>
+                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-pink-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-cubes text-pink-400 text-base"></i> OOPs Concepts</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-[#0F172A] px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Featured Projects</h2>
+                <p class="text-slate-400 text-sm">A collection of engineering milestones and production applications.</p>
+                <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full mt-3"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-[#1E293B]/40 backdrop-blur-sm rounded-2xl border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 hover:bg-[#1E293B]/60 transition-all group shadow-xl">
                     <div>
-                        <h3 class="text-xl font-bold mb-3 text-white">Web-Based Turf & Sports Booking System</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">A robust web application built using Python and Django designed to streamline sports turf reservations, automate scheduling, manage peak-hour slots, and provide users with a clean, responsive booking dashboard.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Django</span>
-                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
-                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">MySQL</span>
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2.5 text-white group-hover:text-blue-400 transition-colors">Web Turf & Sports Booking System</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5">A comprehensive management platform built with Python and Django. Designed to streamline facility scheduling, automate reservations, handle high-demand peak slots, and expose user dashboards.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Django</span>
+                            <span class="bg-blue-500/10 text-blue-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Python</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded-md">MySQL</span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2.5">
-                        <a href="#" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg text-sm transition-colors">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        <a href="#" class="flex items-center justify-center gap-2 border border-gray-700 hover:bg-gray-800 text-gray-300 font-medium py-2.5 rounded-lg text-sm transition-colors"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <a href="#" class="flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 rounded-lg text-xs transition-colors shadow-md">
+                            Live App <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center gap-1.5 border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium py-2 rounded-lg text-xs transition-colors">
+                            <i class="fa-brands fa-github"></i> Repository
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="bg-[#151F32] rounded-xl border border-gray-800 p-6 flex flex-col justify-between hover:border-gray-700 transition-colors">
+                <div class="bg-[#1E293B]/40 backdrop-blur-sm rounded-2xl border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 hover:bg-[#1E293B]/60 transition-all group shadow-xl">
                     <div>
-                        <h3 class="text-xl font-bold mb-3 text-white">Intelligent Computer Vision Classifier</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">A machine learning model developed to process and evaluate complex image data, applying custom feature extraction techniques to automate accurate visual recognition and analytics tasks.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Python</span>
-                            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded">Machine Learning</span>
+                        <div class="w-10 h-10 bg-purple-500/10 border border-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2.5 text-white group-hover:text-purple-400 transition-colors">Intelligent Vision Classifier</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5">An optimized machine learning model designed to parse, clean, and classify raw image matrices. Utilizes custom pre-processing operations to pipeline high-accuracy object categorizations.</p>
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="bg-purple-500/10 text-purple-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Machine Learning</span>
+                            <span class="bg-purple-500/10 text-purple-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Python</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded-md">Data Preprocessing</span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2.5">
-                        <a href="#" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg text-sm transition-colors">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        <a href="#" class="flex items-center justify-center gap-2 border border-gray-700 hover:bg-gray-800 text-gray-300 font-medium py-2.5 rounded-lg text-sm transition-colors"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <a href="#" class="flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 rounded-lg text-xs transition-colors shadow-md">
+                            Live App <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center gap-1.5 border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium py-2 rounded-lg text-xs transition-colors">
+                            <i class="fa-brands fa-github"></i> Repository
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white text-gray-900 px-6 border-t border-gray-100">
-        <div class="max-w-md mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-2">Get in Touch</h2>
-            <p class="text-gray-600 text-sm mb-8">Interested in working together? Fill out the form below or connect with me on social media.</p>
+    <section id="contact" class="py-24 bg-[#0B111E] px-6 border-t border-slate-900">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Get In Touch</h2>
+                <p class="text-slate-400 text-sm">Have a project idea or a question? Shoot me a message.</p>
+                <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full mt-3"></div>
+            </div>
             
-            <form onsubmit="event.preventDefault();" class="space-y-4 text-left">
+            <form onsubmit="event.preventDefault();" class="space-y-4">
                 <div>
-                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-900" required />
+                    <input type="text" placeholder="Full Name" class="w-full px-4 py-3 bg-[#1E293B]/40 border border-slate-800 rounded-xl focus:outline-none focus:border-blue-500 text-sm text-slate-100 transition-colors placeholder:text-slate-500" required />
                 </div>
                 <div>
-                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-900" required />
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-[#1E293B]/40 border border-slate-800 rounded-xl focus:outline-none focus:border-blue-500 text-sm text-slate-100 transition-colors placeholder:text-slate-500" required />
                 </div>
                 <div>
-                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-900 resize-none" required></textarea>
+                    <textarea placeholder="Your Message..." rows="4" class="w-full px-4 py-3 bg-[#1E293B]/40 border border-slate-800 rounded-xl focus:outline-none focus:border-blue-500 text-sm text-slate-100 transition-colors placeholder:text-slate-500 resize-none" required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg text-sm transition-colors shadow-sm">
-                    Send Message
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium py-3 rounded-xl text-sm transition-all shadow-lg shadow-blue-500/10">
+                    Send Message <i class="fa-solid fa-paper-plane ml-1 text-xs"></i>
                 </button>
             </form>
 
-            <!-- Social Links -->
-            <div class="flex items-center justify-center space-x-6 mt-10 text-gray-500">
-                <a href="#" class="hover:text-gray-900 transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
-                <a href="#" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
-                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+            <div class="flex items-center justify-center space-x-6 mt-12 text-slate-400">
+                <a href="#" class="hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors text-xl"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#0B111E] py-6 border-t border-gray-900 text-center text-xs text-gray-500">
-        <p>© 2026 MyPortfolio. All rights reserved.</p>
+    <footer class="bg-[#0B111E] py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <p>© 2026 Yash Patel. All rights reserved.</p>
     </footer>
 
-    <!-- Mobile Menu Script -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        const links = document.querySelectorAll('.menu-link');
+        const menuLinks = document.querySelectorAll('.menu-link');
 
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        links.forEach(link => {
+        menuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });

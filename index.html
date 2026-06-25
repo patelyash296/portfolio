@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Patel | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-[#0B111E] text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white">
 
+    <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0B111E]/80 backdrop-blur-md border-b border-slate-800/60">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent hover:opacity-90 transition-opacity">
@@ -22,11 +25,13 @@
                 <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
             </div>
 
+            <!-- Mobile Menu Toggle Button -->
             <button id="menu-btn" class="md:hidden text-slate-400 hover:text-slate-100 focus:outline-none">
                 <i class="fa-solid fa-bars-staggered text-xl"></i>
             </button>
         </div>
 
+        <!-- Mobile Dropdown Navigation Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-[#0F172A] border-b border-slate-800/80 px-6 py-4 flex flex-col space-y-4 text-sm font-medium shadow-xl">
             <a href="#about" class="menu-link text-slate-300 hover:text-blue-400 transition-colors">About</a>
             <a href="#tech-stack" class="menu-link text-slate-300 hover:text-blue-400 transition-colors">Skills</a>
@@ -35,10 +40,10 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="relative pt-36 pb-24 flex flex-col items-center justify-center text-center px-6 min-h-[90vh] overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-1/4 left-1/3 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
-
+        
         <span class="px-3 py-1 text-xs font-semibold tracking-wider text-blue-400 bg-blue-500/10 rounded-full mb-4 border border-blue-500/20 uppercase">
             Available For Opportunities
         </span>
@@ -48,7 +53,7 @@
         </h1>
         
         <p class="text-lg md:text-xl text-slate-400 max-w-xl mb-10 font-normal leading-relaxed">
-            A driven <span class="text-slate-200 font-medium">Full-Stack Django Developer</span> & <span class="text-slate-200 font-medium">Machine Learning Enthusiast</span> focused on building scalable backends and intelligent algorithms.
+            A driven <span class="text-slate-200 font-medium">Full-Stack Django Developer</span> focused on building clean, scalable backends and robust web application architectures.
         </p>
         
         <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto z-10">
@@ -64,6 +69,7 @@
         </div>
     </section>
 
+    <!-- About Me Section -->
     <section id="about" class="py-24 bg-[#0F172A] border-t border-slate-800/40 px-6">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-12">
@@ -73,104 +79,83 @@
             
             <div class="bg-[#1E293B]/40 rounded-2xl border border-slate-800/80 p-8 md:p-10 shadow-xl backdrop-blur-sm">
                 <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center gap-2.5 justify-center md:justify-start">
-                    <i class="fa-solid fa-graduation-cap"></i> Computer Science Engineering Student
+                    <i class="fa-solid fa-graduation-cap"></i> Computer Science Engineering Graduate
                 </h3>
                 <p class="text-slate-300 leading-relaxed text-base md:text-lg text-center md:text-left">
-                    Hi, I'm Yash Patel, a final-year Computer Science Engineering student at <strong class="text-white font-semibold">Government Engineering College, Patan</strong>. 
-                    I am highly passionate about backend engineering, web application architecture, and data-driven problem-solving.
+                    Hi, I'm Yash Patel, a Computer Science Engineering graduate from <strong class="text-white font-semibold">Government Engineering College, Patan</strong>. 
+                    I specialize in backend development with a strong passion for web application architecture and systematic software design.
                 </p>
                 <p class="text-slate-300 leading-relaxed text-base md:text-lg mt-4 text-center md:text-left">
-                    I enjoy working within the Python ecosystem to design efficient server-side systems and integrate predictive machine learning models. With a strong focus on clean architecture, object-oriented concepts, and robust core structures, I love building scalable, real-world tools that solve concrete community or business problems.
+                    I focus on the Python ecosystem to design clean, scalable server-side systems and efficient database relations. Having successfully wrapped up my engineering journey, I am actively looking for opportunities to build real-world tools that streamline complex backend operations.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Tech Stack Section -->
     <section id="tech-stack" class="py-24 bg-[#0B111E] px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-14">
                 <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Technical Skills</h2>
-                <p class="text-slate-400 text-sm">Languages, frameworks, and core competencies I work with.</p>
+                <p class="text-slate-400 text-sm">Core frameworks and backend technologies I work with.</p>
                 <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full mt-3"></div>
             </div>
             
             <div class="flex flex-wrap justify-center gap-3.5 max-w-3xl mx-auto">
                 <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-blue-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-brands fa-python text-yellow-500 text-base"></i> Python</div>
                 <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-green-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-code text-emerald-500 text-base"></i> Django Framework</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-purple-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-brain text-purple-400 text-base"></i> Machine Learning</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-blue-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-chart-pie text-blue-400 text-base"></i> Data Preprocessing</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-sky-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-cloud-arrow-up text-sky-400 text-base"></i> REST APIs</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-orange-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-database text-orange-400 text-base"></i> MySQL / SQL</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-red-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-brands fa-git-alt text-red-500 text-base"></i> Git & GitHub</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-indigo-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-book-bookmark text-indigo-400 text-base"></i> DSA</div>
-                <div class="flex items-center gap-2.5 bg-[#1E293B]/60 px-5 py-2.5 rounded-xl text-sm font-medium border border-slate-800/60 shadow-md hover:border-pink-500/40 hover:bg-[#1E293B] transition-all cursor-default text-slate-200"><i class="fa-solid fa-cubes text-pink-400 text-base"></i> OOPs Concepts</div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="py-24 bg-[#0F172A] px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Featured Projects</h2>
-                <p class="text-slate-400 text-sm">A collection of engineering milestones and production applications.</p>
+                <p class="text-slate-400 text-sm">A collection of my software milestone and development applications.</p>
                 <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full mt-3"></div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Project 1 -->
                 <div class="bg-[#1E293B]/40 backdrop-blur-sm rounded-2xl border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 hover:bg-[#1E293B]/60 transition-all group shadow-xl">
                     <div>
                         <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mb-4 text-lg">
                             <i class="fa-solid fa-calendar-check"></i>
                         </div>
-                        <h3 class="text-lg font-bold mb-2.5 text-white group-hover:text-blue-400 transition-colors">Web Turf & Sports Booking System</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5">A comprehensive management platform built with Python and Django. Designed to streamline facility scheduling, automate reservations, handle high-demand peak slots, and expose user dashboards.</p>
-                        <div class="flex flex-wrap gap-1.5 mb-6">
+                        <h3 class="text-lg font-bold mb-2.5 text-white transition-colors">Web-Based Turf & Sports Ground Booking and Management System</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5">A comprehensive web application designed to streamline turf reservations, automate operational scheduling, manage distinct high-demand slots, and present an optimized client dashboard built from scratch.</p>
+                        <div class="flex flex-wrap gap-1.5">
                             <span class="bg-blue-500/10 text-blue-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Django</span>
                             <span class="bg-blue-500/10 text-blue-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Python</span>
-                            <span class="bg-slate-800 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded-md">MySQL</span>
                         </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3 pt-2">
-                        <a href="#" class="flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 rounded-lg text-xs transition-colors shadow-md">
-                            Live App <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
-                        </a>
-                        <a href="#" class="flex items-center justify-center gap-1.5 border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium py-2 rounded-lg text-xs transition-colors">
-                            <i class="fa-brands fa-github"></i> Repository
-                        </a>
                     </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="bg-[#1E293B]/40 backdrop-blur-sm rounded-2xl border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 hover:bg-[#1E293B]/60 transition-all group shadow-xl">
                     <div>
-                        <div class="w-10 h-10 bg-purple-500/10 border border-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center mb-4 text-lg">
-                            <i class="fa-solid fa-eye"></i>
+                        <div class="w-10 h-10 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-laptop-code"></i>
                         </div>
-                        <h3 class="text-lg font-bold mb-2.5 text-white group-hover:text-purple-400 transition-colors">Intelligent Vision Classifier</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5">An optimized machine learning model designed to parse, clean, and classify raw image matrices. Utilizes custom pre-processing operations to pipeline high-accuracy object categorizations.</p>
-                        <div class="flex flex-wrap gap-1.5 mb-6">
-                            <span class="bg-purple-500/10 text-purple-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Machine Learning</span>
-                            <span class="bg-purple-500/10 text-purple-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Python</span>
-                            <span class="bg-slate-800 text-slate-300 text-xs font-medium px-2.5 py-0.5 rounded-md">Data Preprocessing</span>
+                        <h3 class="text-lg font-bold mb-2.5 text-white transition-colors">Design Engineering Projects</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5">Multi-semester software design projects executed to address systemic problem verification, architectural blueprint planning, and scalable code logic assembly.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-emerald-500/10 text-emerald-400 text-xs font-medium px-2.5 py-0.5 rounded-md">Computer Science Engineering</span>
                         </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3 pt-2">
-                        <a href="#" class="flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 rounded-lg text-xs transition-colors shadow-md">
-                            Live App <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
-                        </a>
-                        <a href="#" class="flex items-center justify-center gap-1.5 border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium py-2 rounded-lg text-xs transition-colors">
-                            <i class="fa-brands fa-github"></i> Repository
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-24 bg-[#0B111E] px-6 border-t border-slate-900">
         <div class="max-w-md mx-auto">
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Get In Touch</h2>
-                <p class="text-slate-400 text-sm">Have a project idea or a question? Shoot me a message.</p>
+                <p class="text-slate-400 text-sm">Have an opportunity or an inquiry? Shoot me a message.</p>
                 <div class="h-1 w-12 bg-blue-500 mx-auto rounded-full mt-3"></div>
             </div>
             
@@ -189,6 +174,7 @@
                 </button>
             </form>
 
+            <!-- Social Media Connections -->
             <div class="flex items-center justify-center space-x-6 mt-12 text-slate-400">
                 <a href="#" class="hover:text-white transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
                 <a href="#" class="hover:text-blue-400 transition-colors text-xl"><i class="fa-brands fa-linkedin"></i></a>
@@ -197,10 +183,12 @@
         </div>
     </section>
 
+    <!-- Footer Details -->
     <footer class="bg-[#0B111E] py-8 border-t border-slate-900 text-center text-xs text-slate-500">
         <p>© 2026 Yash Patel. All rights reserved.</p>
     </footer>
 
+    <!-- Mobile Nav Script Logic -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
